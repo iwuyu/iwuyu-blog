@@ -1,0 +1,85 @@
+/* @import "./normalize.css"; */
+
+/*:root -> 获取根元素html*/
+:root {
+  --color-text: #888;
+  --color-high-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  font-size: 15px;
+  --line-height: 1.5;
+  /* --horizon:25px;
+  --vertical:-25px; */
+}
+
+header,
+nav,
+section,
+aside,
+article,
+figure,
+figcaption,
+footer,
+hgroup{
+	display: block;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+	overflow-x: hidden;
+	background: #fff;
+}
+body::-webkit-scrollbar{
+  width: 6px;
+ }
+body::-webkit-scrollbar-thumb{
+  background: #dbdbdb;
+  /* background-image: linear-gradient(to bottom, #F16F5C 0%, #F16F5C 12.5%, #5B56DD 12.5%, #5B56DD 25%, #E15CED 25%, #E15CED 37.5%, #27E559 37.5%, #27E559 50%, #18C8C9 50%, #18C8C9 62.5%, #DC8987 62.5%, #DC8987 75%, #BB83D6 75%, #BB83D6 87.5%, #E774BD 87.5%, #E774BD 100%); */
+}
+
+body::-webkit-scrollbar-track{
+  background: #f6f6f6;
+  }
+
+body {
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","华文行楷",Arial,sans-serif;
+  /* user-select: none; 禁止用户鼠标在页面上选中文字/图片等 */
+  -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
+  background: var(--color-background);
+  color: var(--color-text);
+  /* rem vw/vh */
+  /* width: 100vw; */
+  /* height: 100vh; */
+  /* overflow-x: hidden; */
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+.home,.article,.demo,.about,.login,.tool,.essay,.detail { 
+  min-height: calc(100vh);
+}
+.demo,.about,.tool,.essay,.detail {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* @media screen and (max-width:1200px) {
+  .article,.demo,.about,.tool,.essay,.detail {
+    padding: 0 1rem;
+  }
+} */
+
